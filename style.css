@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #ffedd2;
+}
+
+.container-tarjeta{
+    width: 486px;
+    height: 458px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    filter:drop-shadow(6px 6px 6px rgba(0,0,0,0.1));
+}
+
+.container-imagen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.imagen{
+    display: flex;
+    /* top: 120px;
+    left: 380px; */
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.1);
+}
+
+.imagen:hover{
+    width: 200px;
+    height: 200px;
+    filter:drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+}
+
+.container-descripc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+.container-descripc h1{
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.container-descripc p{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.boton1, .boton2{
+    color: rgb(0, 0, 0);
+    width:160px;
+    height: 50px;
+    margin-left: 25px;
+    border: none;
+    padding: 5px;
+    border-radius: 25px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    
+}
+
+.boton1{
+    background:linear-gradient(to right, #e9386d 0%, #fee140 100%);
+    padding: 5px;
+}
+
+.boton1:hover{
+    background:linear-gradient(to right, #fee140 0%, #e9386d 100%);
+    border: solid 1px gray;
+}
+
+
+.boton2{
+    background: #ffedd2;
+    text-align: end;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.boton2:hover{
+    background: #fad59d;
+    border: solid 1px gray;
+}
+
+.botones i{
+    position: relative;
+    vertical-align: middle;
+}
+
+.botones #boton1{
+    left: 75px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.botones #boton2{
+    left: 60px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.botones{
+    width: 100%;
+}
+
+@media only screen and (max-width: 575px){
+
+    .container-tarjeta{
+        margin-left: 100px;
+        width: 386px;
+        height: 528px;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botones #boton1{
+        left: -25px;
+        top: 38px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .botones #boton2{
+        left: -45px;
+        top: 38px;
+        font-size: 25px;
+        text-align: center;
+        
+    }
+
+    .imagen:hover{
+        width: 180px;
+        height: 180px;
+        filter:drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+    }
+    
+}
